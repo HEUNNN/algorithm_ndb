@@ -13,10 +13,10 @@
 function solution(n, arr) {
   let answer = 0;
   let tmp = [];
-  arr = arr.sort((a, b) => a - b);
-  for (let i = 0; i < arr.length; i++) {
+  arr.sort((a, b) => a - b);
+  for (let i = 0; i < n; i++) {
     tmp.push(arr[i]);
-    if (tmp.length >= arr[i]) {
+    if (tmp.length >= i) {
       answer++;
       tmp = [];
     }
