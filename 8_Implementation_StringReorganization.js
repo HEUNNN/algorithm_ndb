@@ -17,9 +17,7 @@ function solution(str) {
       alphabet.push(str.charCodeAt(i));
     }
   }
-
   alphabet = alphabet.sort((a, b) => a - b).map((s) => String.fromCharCode(s));
-  console.log(alphabet);
 
   const num = stringToArr
     .filter((n) => n <= 9)
